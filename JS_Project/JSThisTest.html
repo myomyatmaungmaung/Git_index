@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="testlet"></p>
+    <p id="testvar"></p>
+    <script type="text/javascript">
+        //-------------this in the method
+        /*var person = {
+            firstName : "John",
+            lastName : "Phillip",
+            id : 501,
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        document.write(person.fullName());*/      // don't forget the () to call the function, if not there's only be the sentence
+
+        //-----------this alone and also strict mode
+        /*let x = this;
+        document.write(x);*/
+
+        //-----------this in a function and it also returns global object
+        /*function myFunction(){
+            return this;
+        }
+        console.log(myFunction());
+        document.write(myFunction());*/
+
+        //============call() and apply() methods are same 
+        /*var person1 ={
+            fullName : function(){
+                return this.firstName + " " + this.lastName ;
+            }
+        }
+        var person2 = {
+            firstName : "Emily",
+            lastName : "Scriber"
+        }
+        console.log(person1.fullName.call(person2));
+        document.write(person1.fullName.apply(person2));*/
+
+        //=============bind() method is borrowing a method from another object
+        /*var person = {
+            firstName : "Ben" ,
+            lastName : "Jason" ,
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        var member = {
+            firstName : "Candy",
+            lastName : "Stella" ,
+        }
+        var fullName = person.fullName.bind(member);
+        document.write(fullName());*/
+
+        //===============testing let 
+        var x = 10;
+        {
+            let x = 2;
+            document.getElementById('testlet').innerHTML = x ;
+        }
+        document.getElementById('testvar').innerHTML = x;
+
+
+    </script>
+
+    <h1>The JavaScript <i>this</i> Keyword in Event Handlers</h1>
+    <button onclick="this.style.display='none'"> CLick to remove me!</button>
+
+
+</body>
+</html>

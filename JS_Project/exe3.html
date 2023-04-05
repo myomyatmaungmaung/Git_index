@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe3</title>
+</head>
+<body>
+    <script>
+        var stuName = ["David", "Vinoth", "Divya", "Ishitha", "Thomas"];
+        var marks = [80,77,88,95,68];
+
+        for(var i = 0 ; i < marks.length ; i++){
+            if(marks[i] < 60 ){
+                document.write(stuName[i] + " got F grade. <br>");
+            }else if(marks[i] < 70 ){
+                document.write(stuName[i] + " got D grade. <br>");
+            }else if(marks[i] < 80 ){
+                document.write(stuName[i] + " got C grade. <br>");
+            }else if(marks[i] < 90 ){
+                document.write(stuName[i] + " got B grade. <br>");
+            }else if(marks[i] <= 100 ){
+                document.write(stuName[i] + " got A grade. <br>");
+            }
+        }
+    </script>
+</body>
+</html>

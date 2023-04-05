@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript random function</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input {
+            padding: 10px 20px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        
+        input:focus {
+            outline: none;
+            border-bottom: 1px solid purple;
+        }
+        
+        button {
+            padding: 12px 10px;
+            background-color: rgb(30, 145, 145);
+            border: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>Number Guess Exercise</h1>
+
+        <p>Guess a number between <span id="min"></span> to <span id="max"> </span></p>
+
+        <input type="text" name="" id="guessnum" placeholder="Enter your guess number!">
+
+        <button type="submit" id="btn" onclick="guessing()">Submit</button>
+
+        <span id="messageone" class="firsttext"> </span>
+        <span id="messagetwo"> </span>
+
+        <p></p>
+
+    </div>
+
+    <script>
+        //max-min 
+        let min = 0,
+            max = 10;
+
+        var randomnum = Math.floor(Math.random() * (max - min) + 1);
+        console.log(randomnum);
+
+        let maxnum = document.querySelector('#max');
+        let minnum = document.querySelector('#min');
+        let getguessnumber = document.querySelector('#guessnum');
+
+        let getmessageone = document.querySelector('#messageone');
+        let getmessagetwo = document.querySelector('#messagetwo');
+
+         minnum.textContent = min;//0
+        maxnum.textContent = max; //10
+        
+
+        function guessing() {
+            var guess =parseInt(Number(getguessnumber.value));
+
+                 
+            if (guess < min || guess > max || isNaN(guess)) {
+                
+               errormessage(`Please Enter the correct number between ${min} and ${max}`,"red")
+            } 
+            else if (guess === randomnum) {
+
+                getmessagetwo.innerText = `You win the game ! the correct number is ${randomnum} `;
+                getmessagetwo.style.color = "green";
+                getmessagetwo.style.display ="block";
+             
+            }
+
+            else if (guess > randomnum) {
+
+                errormessage('Guessing number is greater than the answer',"red");
+
+            } 
+            else if (guess < randomnum) {
+
+                errormessage('Guessing number is less than the answer',"red");
+
+
+            } else {
+
+                errormessage('Try Again!',"red");
+
+
+            }
+ 
+            function errormessage(msg,color){
+                getmessageone.innerText = msg;
+                getmessageone.style.color =color;
+                getmessageone.style.display = "block";
+
+                setTimeout(function(){
+                getmessageone.innerText = "";
+               },3000);
+            }
+
+
+           
+
+            // function winmessage(winmsg, color) {
+            //     getmessagetwo.innerText = winmsg;
+            //     getmessagetwo.style.color = color;
+            //     getmessagetwo.style.display = "block";
+            // }
+
+            }
+    </script>
+
+</body>
+
+</html>
+
+<!-- Math.floor(3.56) 3
+    Math.ceil(3.56) 4
+Math.Random 
+Math.sqrt(4) 2
+Math.pow(81)
+Math.round(3.56)4 (3.16)3
+Math.trunc
+Math.abs
+
+-->

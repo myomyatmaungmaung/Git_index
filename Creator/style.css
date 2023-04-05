@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+/* start nav bar */
+
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.navbar .nav-item {
+    /* background-color: pink; */
+    /* top&bottom left&right */
+    padding: 20px 100px;
+    transition: all .6s;
+}
+
+.nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    background-color: silver;
+}
+
+.nav-item:hover .nav-link {
+    color: white;
+}
+/* end nav bar */
+/* start banner */
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    background: url('../assests/img/stock-photo-161956255-1-1500x1000.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.opening {
+    width: 200px;
+    height: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 280px;
+    left: 27px;
+    text-align: center;
+}
+/* end banner */
+/* start about us section */
+
+.about-us {
+    /* background-color: #f4f4f4; */
+}
+
+.about-us .container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.title {
+    width: 400px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.content-row {
+    margin: 20px 300px;
+}
+
+.content-row p {
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.border-para {
+    background-color: #f6f6f6;
+    padding: 20px 30px;
+    border-left: 5px solid grey;
+    margin-top: 50px;
+}
+
+.border-para span {
+    display: block;
+    margin-top: 20px;
+}
+
+.imgdiv img {
+    width: 100%;
+    height: 550px;
+    margin: 50px 0;
+}
+/* end about us section */
+/* start schedule section */
+
+.schedule .title {
+    width: 250px;
+    padding: 12px 20px;
+}
+
+.schedule-content {
+    margin: 20px 300px;
+}
+
+.schedule-content table {
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1)
+}
+/* end schedule section */
+
+.where img{
+    width: 100%;
+    height: 550px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var words = ["javascript", "laravel", "python", "reactjs","nodejs","aspnet"];
+
+        //10
+        //javascript       ----------
+
+        var word = words[Math.floor((Math.random() * words.length))];
+       console.log(word, word.length);
+
+
+        var answerarray = [];
+        for (var i = 0; i < word.length; i++) {
+
+            answerarray[i] = "__";
+        }
+
+       // console.log(answerarray);
+       
+
+        var remainingletter = word.length;//10
+                // 10>0
+        while (remainingletter > 0) {
+            alert("Please guess this word " + answerarray.join("  "));
+
+            var guess = prompt("Guess the letter or click Cancle to stop playing the game!");
+            var guesslength = guess.length;
+            console.log(guesslength);
+ 
+           
+            if (guesslength !== 1) {
+
+                alert("Please enter a single word");
+
+            } else {
+
+                                      
+                for (var j = 0; j < word.length; j++) {
+                       
+                    if (word[j] === guess) {
+                        answerarray[j] = guess;  
+                       
+                        remainingletter--; 
+
+                    }
+                }
+            }
+        }
+
+        alert(answerarray.join(" ")); //j a v a s c r i p t
+        document.write("Good job! The answer is " + word);
+    </script>
+</body>
+
+
+</html>

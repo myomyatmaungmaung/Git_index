@@ -1,0 +1,1 @@
+document.write("I wanna go to the beach.");

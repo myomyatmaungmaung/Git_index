@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section24 Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="carousel slide" id="carousel1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/i7.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i2.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="carousel slide" id="carousel2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/i3.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i4.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i5.webp" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev btn-info" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next btn-info" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="carousel slide" id="carousel3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/i3.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i4.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i5.webp" class="d-block" style="width:1200px; height:200px" alt="">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev btn-info" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next btn-info" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="carousel slide carousel-dark" id="carousel4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/i3.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                    <div class="carousel-caption">
+                        <h3>Hello World</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i4.jpg" class="d-block" style="width:1200px; height:200px" alt="">
+                    <div class="carousel-caption">
+                        <h3>Hello Little Codelab</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sunt.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/i5.webp" class="d-block" style="width:1200px; height:200px" alt="">
+                    <div class="carousel-caption">
+                        <h3 class="text-secondary">Hello Annie</h3>
+                        <p class="text-secondary">You are the most beautiful girl in the world and you're the strongest and richest girl in the world. And you get the job in Australlia with pretty salary in a good position.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev btn-info" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next btn-info" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

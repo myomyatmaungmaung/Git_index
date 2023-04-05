@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="form-check">
+            <input type="checkbox" id="forcheckbox" class="form-check-input">
+            <label for="forcheckbox" class="form-check-label">Default CheckBox</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="forcheckedbox" class="form-check-input" checked>
+            <label for="forcheckedbox" class="form-check-label">Checked CheckBox</label>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="form-check">
+            <input type="checkbox" id="forcheckbox" class="form-check-input" disabled>
+            <label for="forcheckbox" class="form-check-label">Default CheckBox</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="forcheckedbox" class="form-check-input" checked disabled>
+            <label for="forcheckedbox" class="form-check-label">Checked CheckBox</label>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="form-check">
+            <input type="radio" id="forradio" class="form-check-input">
+            <label for="forradio" class="form-check-label">Default Radio</label>
+        </div>
+        <div>
+            <input type="radio" id="forradio2" class="form-chech-input" checked>
+            <label for="forradio2" class="form-check-label">Defalut Checked Radio</label>
+        </div>
+        <div>
+            <input type="radio" id="forradio3" class="form-check-input" disabled>
+            <label for="forradio3" class="form-check-label">Disable Radio</label>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="form-check form-switch">
+            <input type="checkbox" id="forswitch" class="form-check-input">
+            <label for="forswitch" class="form-check-label">Default Switch Checkbox Input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="forswitch2" class="form-check-input" checked>
+            <label for="forswitch2" class="form-check-label">Checked Switch Checkbox Input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="forswitch2" class="form-check-input" disabled>
+            <label for="forswitch2" class="form-check-label">Disable Switch Checkbox Input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" id="forswitch2" class="form-check-input" checked disabled>
+            <label for="forswitch2" class="form-check-label">Disabled Checked Switch Checkbox Input</label>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="form-check form-check-inline">
+            <input type="checkbox" id="forcheck" class="form-check-input" value="option1">
+            <label for="forcheck" class="form-check-label">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" id="forcheck2" class="form-check-input" value="option2">
+            <label for="forcheck2" class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" id="forcheck3" class="form-check-input" value="option2" disabled>
+            <label for="forcheck3" class="form-check-label">3(disabled)</label>
+        </div><br>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" id="forcheck" class="form-check-input" value="option1">
+            <label for="forcheck" class="form-check-label">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" id="forcheck2" class="form-check-input" value="option2" checked>
+            <label for="forcheck2" class="form-check-label">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" id="forcheck3" class="form-check-input" value="option2" disabled>
+            <label for="forcheck3" class="form-check-label">3(disabled)</label>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <input type="checkbox" id="checkbtn" class="btn-check">
+        <label for="checkbtn" class="btn btn-primary">Primary</label>
+
+        <input type="checkbox" id="checkbtn" class="btn-check">
+        <label for="checkbtn" class="btn btn-success">Success</label>
+
+        <input type="checkbox" id="checkbtn" class="btn-check">
+        <label for="checkbtn" class="btn btn-danger">Danger</label>
+
+        <input type="checkbox" id="checkbtn" class="btn-check" disabled>
+        <label for="checkbtn" class="btn btn-info">Disabled</label>
+    </div>
+
+    <div class="container pt-5">
+        <input type="checkbox" id="checkbtnoutline" class="btn-check">
+        <label for="checkbtnoutline" class="btn btn-outline-primary">Single toggle</label>
+
+        <input type="checkbox" id="checkbtnoutline2" class="btn-check" checked>
+        <label for="checkbtnoutline2" class="btn btn-outline-secondary">Checked</label>
+
+        <input type="radio" id="checkbtnoutline3" class="btn-check" checked>
+        <label for="checkbtnoutline3" class="btn btn-outline-success">Checked success radio</label>
+
+        <input type="radio" id="checkbtnoutline4" class="btn-check">
+        <label for="checkbtnoutline4" class="btn btn-outline-danger">Danger Radio</label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

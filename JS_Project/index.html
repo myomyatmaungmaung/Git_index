@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var cat = ["Tom",3,"brown"];
+        /*let i = 0
+        while(i<cat.length){
+            console.log(typeof cat[i]);
+            i++;
+        }*/
+        for(i=0; i<cat.length; i++){
+            document.write("Its type is "+ typeof cat[i] +"</br>");
+        }
+
+        var name = prompt("What's your name?"); //to get information from user with dialog box.
+        document.write("Name is "+ name + ".<br>");
+
+        var catlikes = confirm("Do you like cats?"); //to get yes or no from user
+        if(catlikes){
+            document.write("You are a cats lover.");
+        }else{
+            document.write("You aren't a cats lover.");
+        }
+    </script>
+</body>
+</html>

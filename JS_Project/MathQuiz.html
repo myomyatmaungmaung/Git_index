@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type = "text/css">
+        body {
+            font-family: Arial;
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style ="font-size: 400%;">Random Math Quiz</h1>
+        <br>
+        <br>
+        <br>
+        <h2 id="question"></h2>
+        <input type="text" name="answer" id="answer" style="width:250px; height:40px; font-size: 32px;">
+        <button onclick="check()">Enter</button>
+    </center>
+
+    <script type="text/javascript">
+        var minimum = 1;
+        var maximum = 100;
+        var int1 = Math.floor(Math.random() * (maximum - minimum +1)) + minimum;    //have to check it why
+        var int2 = Math.floor(Math.random() * (maximum - minimum +1)) + minimum;
+        document.getElementById('question').innerHTML = int1 + " " + "+" + " " + int2;
+        var qanswer = int1 + int2;
+
+        function check(){
+            var uanswer = document.getElementById('answer').value;
+            if(uanswer == qanswer){
+                alert("Nice Math Skills! Refresh the page to play again!");
+            }else{
+                alert("Wrong! Don't snooze during Math class!");
+            }
+        }
+    </script>
+</body>
+</html>
